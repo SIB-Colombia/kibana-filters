@@ -1,0 +1,45 @@
+{
+   "filtered":{
+      "query":{
+         "match_all":{
+
+         }
+      },
+      "filter":{
+         "span_or":{
+            "clauses":[
+               {
+                  "span_term":{
+                     "taxonomy.class_name":"mammalia"
+                  }
+               },
+               {
+                  "span_term":{
+                     "taxonomy.class_name":"amphibia"
+                  }
+               },
+               {
+                  "span_term":{
+                     "taxonomy.class_name":"reptilia"
+                  }
+               },
+               {
+                  "span_term":{
+                     "taxonomy.class_name":"aves"
+                  }
+               },
+               {
+                  "span_term":{
+                     "taxonomy.class_name":"insecta"
+                  }
+               },
+               {
+                  "span_term":{
+                     "taxonomy.class_name":"arachnida"
+                  }
+               }
+            ]
+         }
+      }
+   }
+}

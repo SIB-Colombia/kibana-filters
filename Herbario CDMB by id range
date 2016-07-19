@@ -1,0 +1,20 @@
+{
+   "filtered":{
+      "query":{
+         "match":{
+            "resource.name.untouched":{
+               "query":"Herbario CDMB - Jardín Botánico Eloy Valenzuela",
+               "type":"phrase"
+            }
+         }
+      },
+      "filter":{
+         "range":{
+            "id":{
+               "gte":4090429,
+               "boost":1.0
+            }
+         }
+      }
+   }
+}
